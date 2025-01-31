@@ -35,9 +35,19 @@
     border-radius: 12px;
 }
 
-header {
-    margin: 1.25rem 8.75rem;
+.btn2 {
+    background-color: black;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
 }
+
+/* header {
+    margin: 1.25rem 8.75rem;
+} */
 
 /* nav styles */
 nav {
@@ -57,14 +67,14 @@ nav {
 
 .title {
     display: flex;
-    gap: 11px;
+    gap: 0.688rem;
     align-items: center;
 
 }
 
 #school {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .title img {
@@ -80,16 +90,43 @@ nav {
     display: none;
 }
 
+/* banner styles */
+.banner {
+    display: flex;
+    align-items: center;
+    /* margin: 1.25rem 8.75rem; */
+    gap: 3.125rem;
+    justify-content: center;
+}
+
+.content h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+
+}
+
+.content {}
+
+.title1 {
+    display: inline;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
 /* media query */
 
 @media screen and (max-width: 576px) {
     nav {
         justify-content: center;
+        display: inline;
     }
 
     .border {
-        border-bottom: 2px solid orange;
-        border-width: 100%;
+        border-bottom: 1px solid orange;
+
     }
 
 
@@ -116,9 +153,26 @@ nav {
 
     .img {
         display: flex;
-        justify-content: space-between;
-        gap: 282px;
 
     }
 
+    /* body {
+        justify-content: center;
+        margin: 1.25px 8.75px;
+        margin-top: 0px;
+    } */
+
+    /* banner styles */
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #menu {
+        translate: 17.625rem;
+    }
+
+    main {
+        justify-content: center;
+    }
 }
