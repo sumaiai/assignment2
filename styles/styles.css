@@ -25,6 +25,14 @@
     color: #5D58EF;
 }
 
+.text5 {
+    color: #8700FF;
+}
+
+.text-align {
+    text-align: center;
+}
+
 .btn1 {
     background-color: #FEA301;
     padding: 10px 60.5px;
@@ -43,6 +51,48 @@
     color: white;
     font-weight: 600;
     font-size: 1.25rem;
+}
+
+.btn3 {
+    font-weight: 700;
+    font-size: 0.943rem;
+    border: none;
+    background-color: white;
+    margin-top: 2.438rem;
+
+}
+
+.sta-btn {
+    background-color: orange;
+    border-radius: 50%;
+    align-content: center;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 0px;
+    border: none;
+}
+
+.sta-btn img {
+    width: 24px;
+    height: 15px;
+}
+
+.title0 {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.ca-sub {
+    color: #808080;
+    font-weight: 500;
+    font-size: 0.943rem;
+}
+
+.ca-ti {
+    color: #202020;
+    font-weight: 600;
+    font-size: 1.533rem;
 }
 
 /* header {
@@ -83,7 +133,7 @@ nav {
 }
 
 .items {
-    gap: 32px;
+    gap: 2rem;
 }
 
 #menu {
@@ -105,7 +155,13 @@ nav {
 
 }
 
-.content {}
+/* .content {
+    border: 2px solid #FEA301;
+}
+
+.img1 {
+    border: 2px solid #202020;
+} */
 
 .title1 {
     display: inline;
@@ -116,18 +172,83 @@ nav {
     font-size: 1.25rem;
 }
 
+/* cards design */
+.bg {
+    background-image: url("../B11-A2-Kids-School/assets/bg.png");
+}
+
+.cards {
+    display: flex;
+    padding: 2.5rem;
+    margin: 1.75rem;
+    justify-content: center;
+}
+
+.stand {
+    margin: 1.25rem 8.75rem;
+    /* align-items: center; */
+    text-align: center;
+    padding: 0px;
+
+}
+
+.card1 {
+    padding: 0px 2.5rem;
+    margin: 1.75rem;
+    height: 30.123rem;
+    width: 23rem;
+    align-content: center;
+    background-image: linear-gradient(#DEF5FF, white);
+    border-radius: 1.179rem;
+    border: 2px solid #DEF5FF;
+    /* box-shadow: 10px 10px 5px #797085; */
+}
+
+.card2 {
+    padding: 0px 2.5rem;
+    margin: 1.75rem;
+    height: 30.123rem;
+    width: 23rem;
+    align-content: center;
+    background-image: linear-gradient(#FFF4DC, white);
+    border-radius: 1.179rem;
+    border: 2px solid #FFF4DC;
+}
+
+.card3 {
+    padding: 0px 2.5rem;
+    margin: 1.75rem;
+    height: 30.123rem;
+    width: 23rem;
+    align-content: center;
+    background-image: linear-gradient(#F2E8FF, white);
+    border-radius: 1.179rem;
+    border: 2px solid #F2E8FF;
+}
+
+.stand img {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    justify-content: center;
+    gap: 0.625rem;
+    display: flex;
+}
+
 /* media query */
 
 @media screen and (max-width: 576px) {
     nav {
         justify-content: center;
         display: inline;
+        border: 2px solid #8700FF;
     }
 
-    .border {
+    /* .border {
         border-bottom: 1px solid orange;
 
-    }
+    } */
 
 
     nav .items {
@@ -135,8 +256,11 @@ nav {
 
     }
 
-    nav .title h1,
-    button {
+    .btn1 {
+        display: none;
+    }
+
+    #school {
         display: none;
     }
 
@@ -147,13 +271,20 @@ nav {
     .title {
         display: flex;
         justify-content: space-between;
-        padding: 12px 16px;
+        padding: 0.75rem 1rem;
         align-items: center;
     }
 
     .img {
         display: flex;
 
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        border-bottom: 1px solid #FEA301;
     }
 
     /* body {
@@ -166,13 +297,45 @@ nav {
     .banner {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        border: 2px solid #FEA301;
     }
 
     #menu {
         translate: 17.625rem;
     }
 
-    main {
+    main {}
+
+    body {
+        align-items: center;
         justify-content: center;
+
     }
+
+    .content {
+        text-align: center;
+        position: relative;
+        top: 700px;
+        /* margin-top: 90px; */
+    }
+
+    .img1 {
+        margin-top: 50px;
+        position: relative;
+        top: -700px;
+    }
+
+    /* stand styles */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .stand h2 {
+        text-align: center;
+    }
+
+
 }
