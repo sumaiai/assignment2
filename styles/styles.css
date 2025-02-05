@@ -33,6 +33,11 @@
     text-align: center;
 }
 
+.sto-ti {
+    font-weight: 700;
+    font-size: 24px;
+}
+
 .btn1 {
     background-color: #FEA301;
     padding: 10px 60.5px;
@@ -61,6 +66,8 @@
     margin-top: 2.438rem;
 
 }
+
+.btn5 {}
 
 .sta-btn {
     background-color: orange;
@@ -236,13 +243,88 @@ nav {
     display: flex;
 }
 
+/* story styles */
+.story-con {
+    display: flex;
+    /* gap: 18.73px; */
+    margin: 1.25rem 8.75rem;
+    /* text-align: center; */
+    justify-content: center;
+    align-content: center;
+
+}
+
+.stories {
+    padding-bottom: 190px;
+    padding-top: 100px;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 622px;
+    width: 601px;
+}
+
+.right {
+    align-items: center;
+    height: 630px;
+    width: 540px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+.right img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.our {
+    text-align: center;
+}
+
+.left-box {
+    background-color: #FFFFFF;
+    margin: 0px 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+
+}
+
+.left-box img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.left-box h3 {
+    padding: 30px 37px;
+    font-size: 15.34px;
+    font-weight: 700;
+}
+
+.head {
+    padding: 34px 38px;
+}
+
+/* .bg-gre {
+    background-image: linear-gradient(white, #FEBF4F);
+} */
+
+.bg1 {
+    background-image: url("../B11-A2-Kids-School/assets/bg.png"), linear-gradient(white, #f8d79e);
+}
+
+.mob {
+    display: none;
+}
+
 /* media query */
 
 @media screen and (max-width: 576px) {
     nav {
         justify-content: center;
         display: inline;
-        border: 2px solid #8700FF;
     }
 
     /* .border {
@@ -298,7 +380,10 @@ nav {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-        border: 2px solid #FEA301;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
     }
 
     #menu {
@@ -307,11 +392,11 @@ nav {
 
     main {}
 
-    body {
+    /* body {
         align-items: center;
         justify-content: center;
 
-    }
+    } */
 
     .content {
         text-align: center;
@@ -333,8 +418,34 @@ nav {
     }
 
 
-    .stand h2 {
+    .h2 {
+        border: 2px solid #FEA301;
         text-align: center;
+        text-decoration: none;
+        align-content: center;
+    }
+
+    /* .title1 {
+        font-size: 32px;
+
+    } */
+
+    .cards {
+        margin: 0px 16px;
+    }
+
+    /* story style */
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        margin: 0% auto;
+    }
+
+    .mob {
+        display: inline;
     }
 
 
