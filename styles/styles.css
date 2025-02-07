@@ -29,6 +29,24 @@
     color: #8700FF;
 }
 
+.text6 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 42.14px;
+}
+
+.text7 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.text8 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px;
+}
+
 .text-align {
     text-align: center;
 }
@@ -102,17 +120,34 @@
     font-size: 1.533rem;
 }
 
+
+
+
 /* header {
     margin: 1.25rem 8.75rem;
 } */
 
 /* nav styles */
+
+header {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
 nav {
     display: flex;
     gap: 11.625rem;
     margin: 1.25rem 8.75rem;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 /* .title {
@@ -150,10 +185,11 @@ nav {
 /* banner styles */
 .banner {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     /* margin: 1.25rem 8.75rem; */
     gap: 3.125rem;
     justify-content: center;
+    width: 100%;
 }
 
 .content h1 {
@@ -182,6 +218,7 @@ nav {
 /* cards design */
 .bg {
     background-image: url("../B11-A2-Kids-School/assets/bg.png");
+
 }
 
 .cards {
@@ -189,6 +226,7 @@ nav {
     padding: 2.5rem;
     margin: 1.75rem;
     justify-content: center;
+    width: 100%;
 }
 
 .stand {
@@ -196,6 +234,7 @@ nav {
     /* align-items: center; */
     text-align: center;
     padding: 0px;
+    width: 100%;
 
 }
 
@@ -251,33 +290,34 @@ nav {
     /* text-align: center; */
     justify-content: center;
     align-content: center;
+    width: 100%;
 
 }
 
 .stories {
-    padding-bottom: 190px;
-    padding-top: 100px;
+    padding-bottom: 11.875rem;
+    padding-top: 6.25rem;
 }
 
 .left {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 622px;
-    width: 601px;
+    height: 38.875rem;
+    width: 37.563rem;
 }
 
 .right {
     align-items: center;
-    height: 630px;
-    width: 540px;
-    border-radius: 16px;
+    height: 39.375rem;
+    width: 33.75rem;
+    border-radius: 1rem;
     background-color: #FFFFFF;
 }
 
 .right img {
     width: 100%;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .our {
@@ -286,25 +326,25 @@ nav {
 
 .left-box {
     background-color: #FFFFFF;
-    margin: 0px 20px;
-    border-radius: 16px;
-    margin-bottom: 20px;
+    margin: 0px 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 1.25rem;
 
 }
 
 .left-box img {
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .left-box h3 {
-    padding: 30px 37px;
-    font-size: 15.34px;
+    padding: 1.875rem 2.313rem;
+    font-size: 0.959rem;
     font-weight: 700;
 }
 
 .head {
-    padding: 34px 38px;
+    padding: 2.125rem 2.375rem;
 }
 
 /* .bg-gre {
@@ -313,11 +353,59 @@ nav {
 
 .bg1 {
     background-image: url("../B11-A2-Kids-School/assets/bg.png"), linear-gradient(white, #f8d79e);
+    width: 100%;
 }
 
 .mob {
     display: none;
 }
+
+/* footer styles */
+footer {
+    background-color: #01ACFD;
+    display: flex;
+    /* margin: 1.25rem 8.75rem; */
+    /* text-align: center; */
+    justify-content: center;
+    align-content: center;
+    padding: 7.688rem 14.25rem 10.875rem 8.75rem;
+    gap: 6.25rem;
+    width: 100%
+}
+
+.footer-ti {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-ti img {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+
+
+.foo-touch ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0.634rem;
+    padding-left: 0px;
+}
+
+
+
+
+.foo-about ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.foo-about ul li {
+    margin-top: 2rem;
+}
+
 
 /* media query */
 
@@ -379,7 +467,10 @@ nav {
     .banner {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
+        /* justify-items: center; */
+        width: 100%;
+        margin-left: 250px;
+        margin-bottom: 100px;
     }
 
     .banner h2 {
@@ -387,10 +478,12 @@ nav {
     }
 
     #menu {
-        translate: 17.625rem;
+        translate: 35.625rem;
     }
 
-    main {}
+    main {
+        width: 100%;
+    }
 
     /* body {
         align-items: center;
@@ -419,7 +512,6 @@ nav {
 
 
     .h2 {
-        border: 2px solid #FEA301;
         text-align: center;
         text-decoration: none;
         align-content: center;
@@ -447,6 +539,14 @@ nav {
     .mob {
         display: inline;
     }
+
+    /* footer styles */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 400px;
+    }
+
 
 
 }
